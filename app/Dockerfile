@@ -1,5 +1,5 @@
 # set base image
-FROM python:3.9
+FROM python:3.10.8
 
 #set the working directory in the container
 WORKDIR /code
@@ -14,4 +14,4 @@ RUN pip install -r ./requirements.txt
 COPY server.py .
 
 # command to run on container start
-CMD [ "python", "./server.py" ]
+CMD [ "python3", "./server.py" ]
